@@ -1,0 +1,14 @@
+:root {
+    --mainColor: #7488B5;
+    --bg: #030C1C;
+}
+
+body {
+    margin: 0;
+    background-color: var(--bg);
+    color: var(--mainColor) !important;
+    font-family: 'PT Mono', monospace;
+    font-transform: uppercase;
+}
+
+
