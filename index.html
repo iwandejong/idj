@@ -20,6 +20,8 @@
         <script src="https://cdn.tailwindcss.com"></script>
     </head>
     <body class="text-white uppercase">
+        <div id="hero" class="absolute">
+        </div>
         <div class="container-scroll">
             <div class="h-full section-scroll">
                 <div class="flex absolute justify-center text-md mt-5 w-full">
@@ -36,6 +38,45 @@
                     <i class="fas fa-caret-down"></i>
                 </div>
             </div>
+                <script src="./js/three.r92.min.js"></script>
+                <script src="./js/vanta.net.min.js"></script>
+                <script>
+                /*VANTA.DOTS({
+                el: "#hero",
+                color: 0xe2e2e2,
+                color2: 0x7f7f7f,
+                size: 1.00,
+                spacing: 63.00
+                })*/
+                VANTA.NET({
+                    el: "#hero",
+                    // color: 0x3d4e75,
+                    // color: 0x233152,
+                    color: 0x2d3c61,
+                    backgroundColor: 0x030C1C,
+                    points: 10,
+                    /*211339*/
+                    /*696969*/
+                })
+
+
+
+                </script>
+            <!-- <div class="h-full section-scroll">
+                <div class="flex absolute justify-center text-md mt-5 w-full">
+                    <p>I<br>D<br>J</p>
+                </div>
+        
+                <div class="grid gap-4 place-content-center h-full text-center">
+                    <p class="text-2xl">
+                        BECOMING A DATA SCIENTIST<br>
+                        BSC COMPUTER SCIENCE<br>
+                        UNIVERSITY OF PRETORIA<br>
+                        Available for small jobs
+                    </p>
+                    <i class="fas fa-caret-down"></i>
+                </div>
+            </div> -->
     
             <div class="h-full mx-24 section-scroll">
         
@@ -49,51 +90,46 @@
             </div>
 
             <div class="h-full bg-gray-900 section-scroll overflow-hidden">
-                <div class="md:mx-24 mx-4">
-                    <div class="grid place-content-center h-screen">
+                <div class="md:mx-24 mx-12 h-full grid place-content-center">
                         <div class="w-full grid justify-items-center">
                             <div class="m-4 text-center">
                                 <p class="">My Projects</p>
-                                <p class="text-amber-500 opacity-70">[under construction]</p>
                             </div>
                             <!-- <div class="m-8">
                                 <img src="./img/richard-horvath-cPccYbPrF-A-unsplash.jpg">
                             </div> -->
-                            <div class="carousel md:w-3/4">
-                                <div class="carousel-item m-4 grid place-content-center w-full">
-                                    <div class="overlay w-full grid place-content-center text-center bg-gray-900 break-normal">
-                                        <div class="relative w-full">
-                                            <p>Cullinan Motor Investments</p>
-                                            <p class="opacity-70 text-xs">Implemented an API using PHP and SQL to provide a user-friendly interface for interacting with a database of products.</p>
-                                            <p class="text-blue-400 text-sm">University Project</p>
-                                        </div>
-                                    </div>
-                                    <img src="./img/Screenshot 2023-06-07 at 17.15.59.png">
-                                </div>
-                                <div class="carousel-item m-4 grid place-content-center">
-                                    <div class="overlay w-full grid place-content-center text-center bg-gray-900 break-normal">
-                                        <div class="relative">
-                                            <p>5D</p>
-                                            <p class="opacity-70 text-xs">Designed a website for a design agency concept, exploring new ideas for how to showcase design work and attract clients.</p>
-                                            <p class="text-blue-400 text-sm">Personal Project</p>
-                                        </div>
-                                    </div>
+                            <div class="grid md:grid-cols-3 gap-4 w-full text-center">
+                                <!-- <div class="bg-green-500 w-4 h-4"></div>
+                                <div class="bg-blue-500 w-4 h-4"></div>
+                                <div class="bg-red-500 w-4 h-4"></div>
+                                <div class="bg-amber-500 w-4 h-4"></div> -->
+
+                                <a href="cullinan-motor-investments/index.html" class="hover:opacity-50 transition-all grid place-content-center w-full">
+                                    <img class="w-auto" src="./img/Screenshot 2023-06-07 at 17.15.59.png">
+                                    <p class="mt-2 text-sm">Cullinan Motor Investments</p>
+                                </a>
+                                <a href="https://stlab.co.za" class="hover:opacity-50 transition-all grid place-content-center w-full">
+                                    <img src="./img/Screenshot 2023-10-25 at 12.01.42.png">
+                                    <p class="mt-2 text-sm">STLab (Pty) Ltd</p>
+                                </a>
+                                <!-- <a href="" class="carousel-item m-4 hover:opacity-50 transition-all grid place-content-center">
                                     <img src="./img/5D Hero Page Design.png">
-                                </div>
-                                <div class="carousel-item m-4 grid place-content-center">
-                                    <div class="grid place-content-center text-center w-full">
-                                        <p>View all my projects on <span class="underline"><a href="https://github.com/iwandejong">Github</a></span></p>
-                                    </div>
-                                </div>
-                                <div class="carousel-item m-4">
-                                    <img src="./img/richard-horvath-cPccYbPrF-A-unsplash.jpg">
+                                    <p class="mt-2">5 Dimensions</p>
+                                </a> -->
+                                <a href="http://gljc.co.za" class="hover:opacity-50 transition-all grid place-content-center w-full">
+                                    <img src="./img/Screenshot 2023-10-25 at 12.13.50.png">
+                                    <p class="mt-2 text-sm">GLJC Primary School</p>
+                                </a>
+                                <!-- <a href="https://iwandejong.github.io/osca/" class="carousel-item m-4 hover:opacity-50 transition-all grid place-content-center w-full">
+                                    <img src="./img/Screenshot 2023-10-25 at 12.42.14.png">
+                                    <p class="mt-2">osca Documentation</p>
+                                </a> -->
+                            </div>
+                            <div class="hidden sm:inline-flex m-4 grid place-content-center">
+                                <div class="grid place-content-center text-center w-full">
+                                    <p>View all my projects on <span class="underline"><a href="https://github.com/iwandejong">Github</a></span></p>
                                 </div>
                             </div>
-                            <div class="mt-4">
-                                <i class="fas fa-caret-left"></i>
-                                <i class="fas fa-caret-right"></i>
-                            </div>
-                        </div>
                     </div>
                 </div>
         
@@ -147,13 +183,14 @@
             </div>
     
             <div class="h-full section-scroll">
-                <div class="grid place-content-center h-screen">
-                    <div class="flex space-x-5 ">
+                <div class="grid place-content-center h-screen text-center space-y-5">
+                    <div class="flex space-x-5 justify-center">
                         <p>Iwan de Jong</p>
-                        <span>|</span>
+                        <p>|</p>
                         <p class="underline"><a href="https://github.com/iwandejong">Github</a></p>
                         <p class="underline"><a href="https://linkedin.com/in/iwandejong">Linkedin</a></p>
                     </div>
+                    <p class="text-center">Hit me an email: <a href="idj.idejong@gmail.com" class="underline">idj.idejong@gmail.com</a></p>
                 </div>
             </div>
         </div>
