@@ -25,7 +25,7 @@
         <script src="https://cdn.tailwindcss.com"></script>
     </head>
     <body class="text-white uppercase">
-        <div id="hero" class="absolute">
+        <div id="hero" class="absolute w-screen h-screen">
         </div>
         <div class="container-scroll">
             <div class="h-full section-scroll">
@@ -43,23 +43,20 @@
                     <i class="fas fa-caret-down"></i>
                 </div>
             </div>
-                <script src="./js/three.r92.min.js"></script>
+                <script src="./js/three.min.js"></script>
                 <script src="./js/vanta.net.min.js"></script>
                 <script>
-                /*VANTA.DOTS({
-                el: "#hero",
-                color: 0xe2e2e2,
-                color2: 0x7f7f7f,
-                size: 1.00,
-                spacing: 63.00
-                })*/
                 VANTA.NET({
                     el: "#hero",
                     // color: 0x3d4e75,
                     // color: 0x233152,
                     color: 0x2d3c61,
                     backgroundColor: 0x030C1C,
-                    points: 10,
+                    points: 12,
+                    mouseControls: true,
+                    touchControls: true,      
+                    gyroControls: false,
+                    speed: 2
                     /*211339*/
                     /*696969*/
                 })
